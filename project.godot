@@ -1,0 +1,79 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Capital",
+"language": "GDScript",
+"path": "res://Capital/Capital.gd"
+}, {
+"base": "Reference",
+"class": "DebtEnum",
+"language": "GDScript",
+"path": "res://Enums/DebtEnum.gd"
+}, {
+"base": "Capital",
+"class": "Farmland",
+"language": "GDScript",
+"path": "res://Capital/Farmland.gd"
+}, {
+"base": "Relationship",
+"class": "Hierarchy",
+"language": "GDScript",
+"path": "res://People/Relationships/Hierarchy.gd"
+}, {
+"base": "Node",
+"class": "Need",
+"language": "GDScript",
+"path": "res://People/Needs/Need.gd"
+}, {
+"base": "Node2D",
+"class": "Person",
+"language": "GDScript",
+"path": "res://People/Person.gd"
+}, {
+"base": "Node",
+"class": "Relationship",
+"language": "GDScript",
+"path": "res://People/Relationships/Relationship.gd"
+}, {
+"base": "Reference",
+"class": "ResourceEnum",
+"language": "GDScript",
+"path": "res://Enums/ResourceEnum.gd"
+} ]
+_global_script_class_icons={
+"Capital": "",
+"DebtEnum": "",
+"Farmland": "",
+"Hierarchy": "",
+"Need": "",
+"Person": "",
+"Relationship": "",
+"ResourceEnum": ""
+}
+
+[application]
+
+config/name="Autologic"
+run/main_scene="res://Place.tscn"
+config/icon="res://Assets/Images/icon.png"
+
+[input]
+
+drag={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
